@@ -2,7 +2,7 @@ import React from 'react';
 import injectSheet from 'react-jss'
 
 // Custom styles
-import styles from './stylesOptions'
+import styles from './styles'
 
 function Button({classes, btnType='btn', children}) {
     return (
