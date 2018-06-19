@@ -21,7 +21,7 @@ export class AppProvider extends Component {
 
 
         this.state = {
-          numberToRender: 0,
+          numberToRender: null,
           updateNumberToRender: this.updateNumberToRender
         };
     } 
