@@ -19,7 +19,7 @@ class App extends Component {
                     {/* Header component */}
                     <header className={classes.header}>
                         <span className={classes.headerTitle}>
-                            The best app ever
+                            App
                         </span>
                     </header>
 

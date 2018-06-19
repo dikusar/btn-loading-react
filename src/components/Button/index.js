@@ -12,7 +12,7 @@ function Button({classes, btnType='btn', children, value}) {
         <AppContext.Consumer>
             {context => (
                 <button className={classes[btnType]} onClick={()=> {
-                    context.updateNumberToRender(value)
+                    context.handleBtnClick(value)
                 }}>
                     { children }
                 </button>

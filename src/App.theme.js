@@ -9,6 +9,9 @@ const theme = {
 
     // Main container
     mainContainerPadding: 20,
+
+    // Spinner time animation
+    spinnerTimeAnimation: 1500
 }
 
 export default theme

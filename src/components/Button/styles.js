@@ -21,6 +21,7 @@ const styles = theme => ({
 		width: 40,
 		height: 40,
 		padding: 0,
+		margin: [0, 5],
 		borderRadius: 50 + '%',
 		backgroundColor: theme.colorSecondary,
 		'&:hover': {

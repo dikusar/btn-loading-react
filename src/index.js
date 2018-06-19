@@ -14,7 +14,7 @@ import registerServiceWorker from './registerServiceWorker';
 
 ReactDOM.render(
     <ThemeProvider theme={theme}>
-        <AppProvider>
+        <AppProvider theme={theme}>
             <App />
         </AppProvider>
     </ThemeProvider>,

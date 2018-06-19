@@ -8,35 +8,37 @@ import styles from './styles'
 import {AppContext} from '../Provider'
 
 function AnimationBlock(props) {
-    const { classes } = props;
+
+   const { classes } = props;
+    
     return (
-        <div className={classes.container}>
-            <div className={classes.circle}>
-                <div className={classes.spinnerLayer}>
-                    <div className={classes.circleClipperLeft}>
-                        <div className={classes.spinnerCircleLeft}></div>
-                        <div className={classes.spinnerTriangular}></div>
-                    </div>
+        <AppContext.Consumer>
+            {context => (
+                <div className={classes.container}>
+                    <div className={classes.circle}>
+                        <div className={classes.spinnerLayer}>
+                            <div className={classes.circleClipperLeft}>
+                                <div className={classes.spinnerCircleLeft}></div>
+                                <div className={classes.spinnerTriangular}></div>
+                            </div>
 
-                    <span className={classes.inner}>
-                        <AppContext.Consumer>
-                            {context => (
-                                
-                                <span>
-                                    {context.numberToRender}
+                            <div className={classes.inner}>
+                                <span style={{margin:'auto'}}>
+                                    { context.numberToRender }
                                 </span>
-                            )}
-                        </AppContext.Consumer>
-                    </span>
+                            </div>
 
-                    <div className={classes.circleClipperRight}>
-                        <div className={classes.spinnerCircleRight}></div>
+                            <div className={classes.circleClipperRight}>
+                                <div className={context.isAmimate ? classes.spinnerCircleRightAnimate : classes.spinnerCircleRight}></div>
+                            </div>
+
+                        </div>
                     </div>
-
                 </div>
-            </div>
-        </div>
+            )}
+        </AppContext.Consumer>
     )
 }
+
 
 export default injectSheet(styles)(AnimationBlock)
