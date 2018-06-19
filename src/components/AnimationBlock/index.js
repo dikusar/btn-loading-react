@@ -1,34 +1,28 @@
 import React from 'react'
 import injectSheet from 'react-jss'
 
-const styles = {
-    container: {
-        display: 'flex',
-        flexGrow: 1
-    },
-    circle: {
-        display: 'flex',
-        height: 'calc(100vh - 40px)',
-        width: 'calc(100vw - 40px)',
-        maxWidth: 120,
-        maxHeight: 120,
-        margin: 'auto',
-        borderRadius: 50 + '%',
-        backgroundColor: '#2b9a35'
-    },
-    inner: {
-        margin: 'auto',
-        fontSize: 4 + 'rem',
-        color: 'white'
-    }
-}
+// import styles
+import styles from './styles'
 
-function AnimationBlock({classes}) {
+// import app context to access number to display
+import {AppContext} from '../Provider'
+
+function AnimationBlock(props) {
+    const { classes } = props;
     return (
         <div className={classes.container}>
             <div className={classes.circle}>
                 <span className={classes.inner}>
-                    0
+
+                    <AppContext.Consumer>
+                        {(context)=> (
+                            
+                            <span>
+                                {context.numberToRender}
+                            </span>
+                        )}
+                    </AppContext.Consumer>
+
                 </span>
             </div>
         </div>

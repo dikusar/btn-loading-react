@@ -1,13 +1,11 @@
 import React, {Component} from 'react';
 import injectSheet from 'react-jss'
 
-
 // import styles
 import styles from './App.styles'
 import './App.css';
 
 // import custom components
-import Button from './components/Button'
 import AnimationBlock from './components/AnimationBlock'
 import ButtonsContainer from './components/ButtonsContainer'
 
