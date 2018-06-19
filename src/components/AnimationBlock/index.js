@@ -15,7 +15,7 @@ function AnimationBlock(props) {
                 <span className={classes.inner}>
 
                     <AppContext.Consumer>
-                        {(context)=> (
+                        {context => (
                             
                             <span>
                                 {context.numberToRender}

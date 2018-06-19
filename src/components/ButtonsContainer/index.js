@@ -17,7 +17,7 @@ function ButtonsContainer({ classes, btnsToRender=[], btnType="" }) {
                 getButtonsValues(btnsToRender).map(value => {
 
                     return (
-                        <Button key={value} btnType={btnType}>
+                        <Button key={value} btnType={btnType} value={value}>
                             { value }
                         </Button>
                     )
