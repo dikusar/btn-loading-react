@@ -5,7 +5,7 @@ import injectSheet from 'react-jss'
 import styles from './styles'
 
 // import app context to access func to update numberToRender
-import {AppContext} from '../Provider'
+import {AppContext} from '../../Provider'
 
 function Button({classes, btnType='btn', children, value}) {
     return (

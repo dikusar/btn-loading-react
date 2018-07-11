@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import {ThemeProvider} from 'react-jss'
 
 // import app provider
-import {AppProvider} from './components/Provider'
+import {AppProvider} from './Provider'
 
 import theme from './App.theme'
 import './index.css';

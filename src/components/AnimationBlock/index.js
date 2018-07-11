@@ -5,7 +5,7 @@ import injectSheet from 'react-jss'
 import styles from './styles'
 
 // import app context to access number to display
-import {AppContext} from '../Provider'
+import {AppContext} from '../../Provider'
 
 function AnimationBlock(props) {
 
